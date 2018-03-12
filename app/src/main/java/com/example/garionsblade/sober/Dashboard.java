@@ -36,15 +36,15 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        ringProgressBar1 = (RingProgressBar)findViewById(R.id.progress_bar_1);
+        //ringProgressBar1 = (RingProgressBar)findViewById(R.id.progress_bar_1);
         ringProgressBar2 = (RingProgressBar)findViewById(R.id.progress_bar_2);
 
-        ringProgressBar1.setOnProgressListener(new RingProgressBar.OnProgressListener(){
-            @Override
-            public void progressToComplete(){
-                Toast.makeText(Dashboard.this, "Complete!!!", Toast.LENGTH_SHORT).show();
-            }
-        });
+//        ringProgressBar1.setOnProgressListener(new RingProgressBar.OnProgressListener(){
+//            @Override
+//            public void progressToComplete(){
+//                Toast.makeText(Dashboard.this, "Complete!!!", Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
         new Thread(new Runnable() {
             @Override

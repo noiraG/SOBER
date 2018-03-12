@@ -3,7 +3,6 @@ package com.example.garionsblade.sober;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.support.v7.widget.CardView;
 
 
 public class MainActivity extends AppCompatActivity {

@@ -12,11 +12,11 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="120dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="40dp"
-        app:srcCompat="@drawable/logo"
+        android:layout_height="120dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/logo" />
 
     <EditText
         android:id="@+id/editText"
@@ -41,36 +41,24 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        android:layout_marginBottom="130dp"
-        android:layout_alignBottom="@+id/cardView"
+        android:layout_marginBottom="110dp"
+        android:layout_alignBottom="@+id/button"
         android:layout_alignLeft="@+id/editText"
         android:layout_alignStart="@+id/editText" />
 
-    <android.support.v7.widget.CardView
+    <Button
+        android:id="@+id/button"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        app:cardBackgroundColor="@color/colorAccent"
-        app:cardCornerRadius="25dp"
-        app:cardElevation="10dp"
-        android:id="@+id/cardView"
-        android:layout_marginBottom="31dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/mybutton"
+        android:textColor="#fff"
+        android:text="Login"
+        android:textSize="18sp"
+        android:elevation="10dp"
+        android:shadowColor="#000"
         android:layout_above="@+id/textView2"
-        android:layout_centerHorizontal="true">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="Login"
-                android:textColor="#fff"
-                android:textSize="18sp" />
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -110,4 +98,6 @@
             android:layout_marginLeft="15dp"
             app:srcCompat="@drawable/facebook" />
     </LinearLayout>
+
+
 </RelativeLayout>
